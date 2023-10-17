@@ -75,7 +75,7 @@ acceptance("BannerBlocks - General", function () {
       document
         .querySelector(".banner-blocks__block-title")
         .style[0].includes("--banner-box-color"),
-      "custom property exists",
+      "custom property exists"
     );
   });
 });
