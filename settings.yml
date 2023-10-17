@@ -1,6 +1,6 @@
 banner_blocks:
   default: '[{"title":"Placeholder Title","source":"manual","content":"Placeholder Content","color":"#FF00FF"},{"title":"Another Title","source":"manual","content":"More Content","color":"#000000"}]'
-  json_schema: '{"type":"array","format":"table","uniqueItems":true,"items":{"type":"object","properties":{"title":{"type":"string","description":"The title of the stat."},"source":{"type":"string","description":"The source of the stat.","enum":["manual","solved_topics"]},"content":{"type":"string","description":"The content of the stat."},"color":{"type":"string","description":"The background color of the block header."}},"additionalProperties":false}}'
+  json_schema: '{"type":"array","format":"table","uniqueItems":true,"items":{"type":"object","properties":{"title":{"type":"string","description":"The title of the block."},"source":{"type":"string","description":"The source of the block.","enum":["manual","solved_topics"]},"content":{"type":"string","description":"The content of the block."},"color":{"type":"string","description":"The background color of the block title."}},"additionalProperties":false}}'
 
 show_on_mobile:
   default: false
