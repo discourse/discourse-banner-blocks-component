@@ -18,7 +18,7 @@ export default class BannerBlocks extends Component {
   {{#if this.shouldShow}}
     <div class="banner-blocks">
       {{#each this.formattedSetting as |block index|}}
-        <div class="banner-blocks__block --banner-blocks__block--{{index}}" >
+        <div class="banner-blocks__block" data-block-index={{index}}>
           <div class="banner-blocks__block-title" style={{block.customStyles}}>
             {{block.title}}
           </div>
