@@ -1,6 +1,6 @@
-import { acceptance } from "discourse/tests/helpers/qunit-helpers";
-import { test } from "qunit";
 import { visit } from "@ember/test-helpers";
+import { test } from "qunit";
+import { acceptance } from "discourse/tests/helpers/qunit-helpers";
 
 function mockWithSolved() {
   settings.banner_blocks = JSON.stringify([
@@ -36,7 +36,7 @@ function mockWithoutSolved() {
   ]);
 }
 
-acceptance("BannerBlocks - General", function (needs) {
+acceptance("BannerBlocks - General", function () {
   test("Banner blocks are visible on a top route", async function (assert) {
     mockWithoutSolved();
     await visit("/");
