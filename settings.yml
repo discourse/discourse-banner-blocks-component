@@ -1,0 +1,6 @@
+banner_blocks:
+  default: ""
+  json_schema: '{"type":"array","format":"table","uniqueItems":true,"items":{"type":"object","properties":{"title":{"type":"string","description":"The title of the stat."},"source":{"type":"string","description":"The source of the stat.","enum":["manual","solved_topics"]},"content":{"type":"string","description":"The content of the stat."},"color":{"type":"string","description":"The background color of the block header."}},"additionalProperties":false}}'
+
+show_on_mobile:
+  default: false

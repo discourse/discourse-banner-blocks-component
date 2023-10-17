@@ -1,0 +1,8 @@
+{
+  "author": "Discourse",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "latest",
+    "eslint-plugin-simple-import-sort": "^10.0.0"
+  }
+}
