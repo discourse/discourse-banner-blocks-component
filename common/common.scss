@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   gap: 1em;
+
   &:not(:empty) {
     margin-bottom: 1em;
   }
