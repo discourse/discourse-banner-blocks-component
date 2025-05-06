@@ -26,6 +26,24 @@ export default class BannerBlocks extends Component {
   }
 
   get shouldShow() {
+    const allowedPaths =
+        settings.banner_blocks_allowed_paths.split("|");
+
+    const withinPathsAllowed = allowedPaths.some(
+        (path) =>
+          this.router.currentURL.includes(path) ||
+          this.router.currentURL.startsWith(path)
+      );
+
+    if (withinPathsAllowed && !allowedPaths.includes("")) {
+        return true;
+      }
+
+
+    if (!this.siteSettings.show_banner_in_top_menus){
+      return false;
+    }
+
     const targets = this.siteSettings.top_menu
       .split("|")
       .map((opt) => `discovery.${opt}`);
