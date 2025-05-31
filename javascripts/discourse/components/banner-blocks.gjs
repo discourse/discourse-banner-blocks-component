@@ -3,9 +3,9 @@ import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
 import { service } from "@ember/service";
 import { htmlSafe } from "@ember/template";
+import { eq } from "truth-helpers";
 import concatClass from "discourse/helpers/concat-class";
 import { renderAvatar } from "discourse/helpers/user-avatar";
-import eq from "truth-helpers/helpers/eq";
 
 export default class BannerBlocks extends Component {
   @service router;
