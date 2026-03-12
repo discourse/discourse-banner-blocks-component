@@ -71,10 +71,10 @@ acceptance("BannerBlocks - General", function () {
     mockWithoutSolved();
     await visit("/");
 
-    assert.ok(
-      document
-        .querySelector(".banner-blocks__block-title")
-        .style[0].includes("--banner-box-color"),
+    assert.dom(".banner-blocks__block-title").hasStyle(
+      {
+        "--banner-box-color": "#ff0000",
+      },
       "custom property exists"
     );
   });
